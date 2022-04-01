@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #141414;
+}
+#container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#box{
+  width: 300px;
+  height: 300px;
+  border: 2px solid #8436c3;  
+  position: relative;
+}
+
+.edge input{
+  border: 1px solid #8436c3;
+  background: transparent;
+  color: #fff;
+  padding: 0.2rem  0.6rem;
+  font-family: Arial;
+  font-size: 0.8rem;
+  outline: none;
+  text-align: center;
+  width: 40px;
+  position: absolute;
+}
+
+.tl-radius input{
+  top: -40px;
+  left: -20px;
+}
+
+.tr-radius input{
+  top: -40px;
+  right: -20px;
+}
+
+.bl-radius input{
+  bottom: -40px;
+  left: -20px;
+}
+.br-radius input{
+  bottom: -40px;
+  right: -20px;
+}
+
+.clipboardContainter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#result-clipboard{
+  background: #141414;
+  border: 1px solid #8436c3;
+  font-family: Arial;
+  font-size: 0.8rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+}
+
+.clipboardContainter button{
+  margin-top: 20px;
+  padding: 0.6rem;
+  background: #141414;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #8436c3;
+
+}

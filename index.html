@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Radius Previewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="box">
+        <div class="edge tl-radius">
+          <input
+            type="text"
+            class="tl-radius-input"
+            value="0"
+            onkeyup="updateBorderRadius(event)"
+          />
+        </div>
+        <div class="edge tr-radius">
+          <input
+            type="text"
+            class="tr-radius-input"
+            value="0"
+            onkeyup="updateBorderRadius(event)"
+          />
+        </div>
+        <div class="edge bl-radius">
+          <input
+            type="text"
+            class="bl-radius-input"
+            value="0"
+            onkeyup="updateBorderRadius(event)"
+          />
+        </div>
+        <div class="edge br-radius">
+          <input
+            type="text"
+            class="br-radius-input"
+            value="0"
+            onkeyup="updateBorderRadius(event)"
+          />
+        </div>
+      </div>
+      <div class="clipboardContainter">
+        <div id="result-clipboard" readonly>
+          border-radius: 0px 0px 0px 0px; 
+        </div>
+        <button onclick="copyToClipBoard()">Copy to Clipboard</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
